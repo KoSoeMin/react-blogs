@@ -1,5 +1,5 @@
-import React from 'react'
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react'
+import { useParams, useNavigate } from 'react-router-dom';
 import useFetch from "../hooks/useFetch";
 
 export default function BlogDetail() {
@@ -8,6 +8,17 @@ export default function BlogDetail() {
   const { blogId } = useParams();
 
   const { data : blog, loading, error } = useFetch(`http://localhost:3001/blogs/${blogId}`);
+
+
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    if(error) {
+        setTimeout(() => {
+            navigate('/')
+        }, 2000);
+    }
+  },[error, navigate])
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;

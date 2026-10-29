@@ -4,7 +4,7 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
 import BlogDetail from '../pages/BlogDetail'
-
+import NotFound from '../pages/NotFound'
 
 
 const router = createBrowserRouter([
@@ -27,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/blogs/:blogId",
         element: <BlogDetail/>,
+      },
+      {
+        path: "*",
+        element: <NotFound/>,
       },
     ],
   },
