@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Getting Started with React",
+      "author": "Alex Morgan",
+      "body": "React helps you build user interfaces from reusable components. Start with a small component, pass data through props, and add state when your interface needs to respond to user input."
+    },
+    {
+      "id": 2,
+      "title": "A Simple Guide to CSS Grid",
+      "author": "Jamie Chen",
+      "body": "CSS Grid makes it easier to create layouts with rows and columns. Define your grid on a container, then place items where they belong. It is a flexible way to build responsive page layouts."
+    },
+    {
+      "id": 3,
+      "title": "Building Better Daily Habits",
+      "author": "Taylor Brooks",
+      "body": "Small, consistent actions can add up to meaningful progress. Choose one habit, make it easy to repeat, and track your effort over time. Focus on showing up regularly rather than being perfect."
+    }
+  ]
+}

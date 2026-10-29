@@ -72,11 +72,11 @@ body {
   border: 1px solid rgb(32 42 37 / 8%);
   border-radius: 1.5rem;
   box-shadow: 0 24px 70px rgb(32 42 37 / 7%);
-  margin: 4rem auto 0;
+  margin: 2rem auto 0;
   max-width: 72rem;
-  min-height: 25rem;
+  min-height: 15rem;
   overflow: hidden;
-  padding: clamp(2rem, 7vw, 6rem);
+  padding: clamp(1rem, 5vw, 4rem);
   position: relative;
 }
 

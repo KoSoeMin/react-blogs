@@ -1,0 +1,62 @@
+.Home {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  width: 100%;
+}
+
+.Home > div {
+  background: rgb(255 255 255 / 82%);
+  border: 1px solid rgb(32 42 37 / 9%);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgb(32 42 37 / 5%);
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  padding: 1.5rem;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.Home > div:hover {
+  border-color: rgb(84 116 95 / 35%);
+  box-shadow: 0 16px 36px rgb(32 42 37 / 10%);
+  transform: translateY(-3px);
+}
+
+.Home h3 {
+  color: #263d32;
+  font-size: 1.25rem;
+  letter-spacing: -0.035em;
+  line-height: 1.35;
+  margin: 0 0 0.75rem;
+}
+
+.Home p {
+  color: #647168;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.Home a {
+  align-self: flex-start;
+  border-radius: 999px;
+  color: #41634b;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: auto;
+  padding: 0.55rem 0.85rem;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.Home a:hover,
+.Home a:focus-visible {
+  background: #eaf0e8;
+  color: #263d32;
+}
+
+.Home a:focus-visible {
+  outline: 2px solid #54745f;
+  outline-offset: 3px;
+}
